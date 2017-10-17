@@ -1,0 +1,17 @@
+
+<h1>Favorites</h1>
+
+
+{{#each model as |favorite| }}
+   <div class="card" style="width: 20rem; float:left; margin:20px; position:relative; heigth:300px">
+  <img width="100%" height="200" class="card-img-top" src="{{favorite.url}}" alt="{{images.data.firstObject.title}}">
+  <div class="card-body">
+    <h4 class="card-title">{{favorite.title}}</h4>
+    <p class="card-text">{{favorite.description}}</p>
+    <a href="#" class="btn btn-primary">Eliminar</a>
+  </div>
+</div>
+
+{{/each}}
+
+{{outlet}}

@@ -1,0 +1,14 @@
+<div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjwL1AtLDalaubTbx7SaZGq8YQunTJgw7zappPSrYt_vwXnl4o" />
+</div>
+<div>
+    {{input value=searchTerm name='edu' type='text'}}
+    
+    <button {{action "doSearch" searchTerm}}>Buscar</button>
+</div>
+<!--
+<button {{action "doHide" }}>Ocultar</button>
+<button {{action "doIr" }}>Ir</button>
+-->
+
+{{outlet}}

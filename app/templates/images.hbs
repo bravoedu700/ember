@@ -1,0 +1,9 @@
+<h1>Cant Results: {{model.collection.metadata.total_hits}}</h1>
+
+
+{{#each model.collection.items as |images| }}
+    {{imge-item images=images }}
+{{/each}}
+
+
+{{outlet}}
