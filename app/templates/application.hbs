@@ -1,9 +1,11 @@
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!--{{welcome-page --}}
 {{!-- Feel free to remove this! --}}
-<nav class="nav">
-    <a class="nav-link" href="#">{{#link-to 'search'}}Buscar{{/link-to}}</a>
-    <a class="nav-link" href="#">{{#link-to 'favorites'}}Favorites{{/link-to}}</a>
-</nav>
+
+<ul class="nav nav-pills">
+  <li role="presentation" class="active">{{#link-to 'search'}}Buscar{{/link-to}}</li>
+  <li role="presentation"><a href="#">{{#link-to 'favorites'}}Favorites{{/link-to}}</a></li>
+  <li role="presentation"><a href="#">{{#link-to 'bookmarks'}}Bookmarks{{/link-to}}</a></li>
+</ul>
 
 {{outlet}}

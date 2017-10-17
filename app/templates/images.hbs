@@ -1,9 +1,12 @@
 <h1>Cant Results: {{model.collection.metadata.total_hits}}</h1>
 
-
+<div class="row">
 {{#each model.collection.items as |images| }}
-    {{imge-item images=images }}
-{{/each}}
+    
+        {{imge-item images=images }}
 
+    <p><button {{action "saveImagen" images.links.firstObject.href }}>ADD</button></p>
+{{/each}}
+</div>
 
 {{outlet}}

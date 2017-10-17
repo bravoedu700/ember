@@ -2,6 +2,7 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
     ajax: Ember.inject.service(),
+    bookmarks: Ember.inject.service(),
     model(params, transition){
 
         console.log(transition.queryParams['q']);
@@ -20,5 +21,11 @@ export default Route.extend({
         ]}
         */
 
+    },
+    actions:{
+        saveImagen(href){
+            //console.log(href);
+            this.get('bookmarks').add(href);
+        }
     }
 });
