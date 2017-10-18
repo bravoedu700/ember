@@ -6,6 +6,8 @@
         {{imge-item images=images }}
 
     <p><button {{action "saveImagen" images.links.firstObject.href }}>ADD</button></p>
+    <p>{{#link-to 'image' images.data.firstObject.nasa_id }}IR{{/link-to}}</p>
+
 {{/each}}
 </div>
 

@@ -13,6 +13,8 @@ Router.map(function() {
     this.route('new');
   });
   this.route('bookmarks');
+  this.route('image',{ path: '/image/:nasa_id'});
+  this.route('favorite',{ path: 'favorite/:id'});
 });
 
 export default Router;
